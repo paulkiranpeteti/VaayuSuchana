@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaayu Suchana</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Vaayu Suchuna -- An Application to frequently check the weather updates</h1>
+    <div class="body-section">
+        <div class="content">
+            <div class="content-heading">
+                <p>Get your Location's weather updates</p>
+            </div>
+            <div class="content-gif">
+                <img src="./templates/rabbit-eating-bgless.gif" alt="rabbit gif"></video>
+            </div>
+            <div class="content-input">
+                <input type="text" placeholder="Enter your City">
+                <button type="button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="result-section">
+        <div class="result-card">
+            <div class="res-1">
+                <p id="city-name">BENGALURU,IN </p>
+                <p id="city-time">time</p>
+            </div>
+           <div class="res-2">
+                <p id="city-temperature">Temperature</p>
+           </div>
+            <div class="res-3">
+                <p id="city-desc">Description</p>
+                <p id="min-max-temp">Max and Min Temp</p>
+            </div>
+        </div>
+        <div class="error-response">
+            <p>City Name you have entered doesn't Exist! Please try with another City Name.</p>
+        </div>
+    </div>
+    <script src="./weather.js"></script>
 </body>
 </html>

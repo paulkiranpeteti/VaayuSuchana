@@ -1,0 +1,138 @@
+.body-section{
+    height: 83vh;
+    width: 100wh;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: auto;
+}
+
+.result-section{
+    height: 50vh;
+    width: 100wh;
+    background-color: aquamarine;
+}
+
+.result-card{
+    border: 3px solid black;
+    box-shadow: -3px -3px 8px gray;
+    border-radius: 1%;
+    height: 70%;
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.error-response{
+    border: 3px solid black;
+    box-shadow: -3px -3px 8px gray;
+    border-radius: 1%;
+    height: 20%;
+    width: 55%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.error-response p {
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content{
+    border: 3px solid black;
+    box-shadow: -3px -3px 8px gray;
+    border-radius: 1%;
+    height: 75%;
+    width: 55%;
+}
+
+.content-heading{
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content-gif{
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content-gif img{
+    height: 110%;
+    overflow: auto;
+}
+
+.content-input{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-input input{
+    height: 23%;
+    width: 60%;
+    text-align: center;
+    border-radius: 99rem;
+    border: 1px black;
+    border-style:ridge;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.content-input button{
+    height: 20%;
+    width: 15%;
+    border-radius: 99rem;
+    font-size: 14px;
+    font-family: cursive;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+p{
+    font-size: 23px;
+    text-align: center;
+    font-family:cursive;
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: auto;
+}
+
+#city-name{
+    font-size: 30px;
+}
+
+#city-time{
+    font-size: 15px;
+}
+
+#city-temperature{
+    font-size: 50px;
+    font-weight: bold;
+    color:cornflowerblue;
+}
+
+#city-desc{
+    font-size: 23px;
+}
+
+#min-max-temp{
+    font-size: 18px;
+}
