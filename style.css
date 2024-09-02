@@ -13,6 +13,7 @@
     border-radius: 1%;
     height: 75%;
     width: 55%;
+    position:relative;
 }
 
 .content-heading{
