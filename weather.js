@@ -11,18 +11,13 @@ async function checkWeather(cityname)
     const response = await fetch (apiurl+"&q="+cityname+"&appid="+apiKey);
     const data  = await response.json();
     if(response.status != 404){
-        // console.log(data.name);
-        // console.log(data.sys.country);
-        // console.log();
-        // console.log(data.weather[0].description);
-        // console.log(data.main.temp_min+" "+data.main.temp_max);
         document.querySelector('.result-card').style.display = 'flex';
         document.querySelector('.error-response').style.display = 'none';
 
         document.querySelector('#city-name').innerHTML = data.name.toUpperCase()+","+data.sys.country;
-        document.querySelector('#city-temperature').innerHTML = data.main.temp+" c";
+        document.querySelector('#city-temperature').innerHTML = data.main.temp+"°C";
         document.querySelector('#city-desc').innerHTML = data.weather[0].description;
-        document.querySelector('#min-max-temp').innerHTML = data.main.temp_min+" "+data.main.temp_max;
+        document.querySelector('#min-max-temp').innerHTML =data.main.temp_min+" | "+data.main.temp_max;
     }
     else{
         document.querySelector('.result-card').style.display = 'none';
